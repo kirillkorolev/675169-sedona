@@ -65,7 +65,7 @@
           
         </section>
           
-        <section class="Interested">
+        <section class="interested">
               <h2>Заинтресовались?</h2> 
               <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
               <button type="submit" class="search-button button">Поиск гостинице в Седоне</button>
@@ -77,23 +77,29 @@
                     <ul>
                       <li>
                           <label for="arriaval-date">Дата заезда</label>
-                          <input type="date" id="arriaval-date" name="arriaval-date">
+                          <input type="text" id="arriaval-date" name="arriaval-date">
+                          <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </li>
                       <li>
                           <label for="departure-date">Дата выезда</label>
-                          <input type="date" id="departure-date" name="departure-date">
+                          <input type="text" id="departure-date" name="departure-date">
+                          <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </li>
                       <li>
                           <label for="grownups">Взрослые</label>
+                          <button type="button">-</button>
                           <input type="number" id="grownups" name="grownups-ammount" min="1" step="1" value="1">
+                          <button type="button">+</button>
                       </li>
                       <li>
                           <label for="children">Дети</label>
+                          <button type="button">-</button>
                           <input type="number" id="children" name="children-ammount" min="0" step="1" value="0">
+                          <button type="button">+</button>
                       </li>
                     </ul>
                     
-                    <button type="button" class="search-button button">Найти</button>
+                    <a href="https://search.visitsedona.com">Найти</a>
                   </fieldset>
                   
               </form>
