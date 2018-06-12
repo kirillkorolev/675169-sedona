@@ -23,9 +23,55 @@
       <h1 class="visually-hidden">Выбор жилья</h1>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр выбора жилья</h2>
-          
-            <!-- Здесь будет форма -->
             
+            <form name="hotel-filter" method="get" action="https://echo.visitsedona.com">
+                <fieldset>
+                  <legend>Инфраструктура</legend>
+                    <ul>
+                      <li class="filter-option">
+                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                          <label for="filter-swimming-pool">Бассейн</label> 
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-parking" name="parking">
+                        <label for="filter-parking">Парковка</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-wifi" name="wifi">
+                        <label for="filter-wifi">Wi-Fi</label>
+                      </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Тип жилья</legend>
+                    <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>   
+                        <label for="filter-hotel">Гостиница</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>      
+                        <label for="filter-motel">Мотель</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="appartments" id="filter-appartments" checked>      
+                        <label for="filter-appartments">Аппартаменты</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                  <legend>Стоимость в сутки (р):</legend>
+                    
+                  <input type="range" min="0" max="4000" step="1000">
+                
+                
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            
+            </form>   
+          
         </section>
           
         <section class="search-filters">
@@ -34,14 +80,14 @@
             <h3>Сортировка</h3>
             <ul class="sorting-type">
                 <li class="sorting-type-current">По цене</li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По рейтингу</a></li>
+                <li><a href="sorting-type.html">По типу</a></li>
+                <li><a href="sorting-down.html">По рейтингу</a></li>
             </ul>
             <ul class="sorting-style">
                 <li class="sorting-style-current">
-                    <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="знак сортировки по возрастанию"></a>
+                    <a href="sorting-up.html"><img src="img/icon-up-dir.svg" width="11" height="10" alt="знак сортировки по возрастанию"></a>
                 </li>
-                <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="знак сортировки по убыванию"></a>
+                <li><a href="sorting-down.html"><img src="img/icon-down-dir.svg" width="11" height="10" alt="знак сортировки по убыванию"></a>
                 </li>
             </ul>
         </section>

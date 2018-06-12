@@ -65,15 +65,38 @@
           
         </section>
           
-        <section class="Intersted">
+        <section class="Interested">
               <h2>Заинтресовались?</h2> 
               <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <p>Поиск гостинице в Седоне</p>
-              
+              <button type="submit" class="search-button button">Поиск гостинице в Седоне</button>
+        </section>      
               <!-- Здесь будет форма -->
-              
-        </section>
-          
+              <form name="hotel-search" method="get" action="https://echo.visitsedona.com">
+                <fieldset>
+                  <legend class="visually-hidden">Параметры поиска</legend>
+                    <ul>
+                      <li>
+                          <label for="arriaval-date">Дата заезда</label>
+                          <input type="date" id="arriaval-date" name="arriaval-date">
+                      </li>
+                      <li>
+                          <label for="departure-date">Дата выезда</label>
+                          <input type="date" id="departure-date" name="departure-date">
+                      </li>
+                      <li>
+                          <label for="grownups">Взрослые</label>
+                          <input type="number" id="grownups" name="grownups-ammount" min="1" step="1" value="1">
+                      </li>
+                      <li>
+                          <label for="children">Дети</label>
+                          <input type="number" id="children" name="children-ammount" min="0" step="1" value="0">
+                      </li>
+                    </ul>
+                    
+                    <button type="button" class="search-button button">Найти</button>
+                  </fieldset>
+                  
+              </form>
           
           <div class="Map">
             <h2 class="visually-hidden">Интерактивная карта Седоны</h2>
