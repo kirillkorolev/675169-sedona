@@ -63,10 +63,12 @@
                 
                 <fieldset>
                   <legend>Стоимость в сутки (р):</legend>
-                    <button type="button">от 0</button><button type="button">до 3000</button><br>
-                    <button><img src="img/filter-button.jpg" width="20" height="22" alt="кнопка фильтра"></button>
-                  <input type="range" min="0" max="4000" step="1000">
-                
+                    
+                    от<input type="number" min="0" step="1" class="visually-hidden filter-input min-price" value="0">до<input type="number" min="0" step="1000" class="visually-hidden filter-input max-price" value="3000"><br>
+                    <div class="slider">
+                        <span><img src="img/filter-button.jpg" width="20" height="22" alt="кнопка фильтра"></span>
+                        <span><img src="img/filter-button.jpg" width="20" height="22" alt="кнопка фильтра"></span>                 
+                    </div>
                 
                 </fieldset>
                 <button type="submit" class="filter-button button">Показать</button>
@@ -122,7 +124,7 @@
                     <img src="img/hotel-3.jpg" width="135" height="90" alt="Фотография второй гостиницы">
                     <p>Апартаменты от 2000 р.</p>
                     <a href="villas-at-poco-diablo.html">Подробнее</a>
-                    <a type="button" href="#">Забонировать</a>
+                    <a type="button" href="#">Забронировать</a>
                     <div><img src="img/star.svg" alt="Оценка 2 звезды" width="18" height="17"><img src="img/star.svg" width="18" height="17"></div>
                     <p>Рейтинг: 8,9</p>
                 </li>
