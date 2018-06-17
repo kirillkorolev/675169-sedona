@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -28,12 +31,12 @@
           <img src="img/welcome-to-sedona.jpg" width="768" Height="512" alt="Добро пожаловать в Седону!">
         </section>
           
-        <section class="Sedona-reasons">
+        <section class="sedona-reasons">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-            <p>Седона - небольшой городок в Аризоне,<br>Заслуживающий большего!</p>
+            <div class="description">Седона - небольшой городок в Аризоне,<br>Заслуживающий большего!</div>
               <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-                <ol class="5-sedona-reasons" start="1">
-                  <li><h3>Настоящий городок</h3>
+                <ol class="five-reasons" start="1">
+                  <li class="reason"><h3>Настоящий городок</h3>
                     Седона - не атракцион для туристов, там течет своя жизнь
                     <img src="img/sedona-view.jpg" width="512" height="256" alt="Вид на улицы Седона">
                     
@@ -44,20 +47,20 @@
                       </ul>
                    </li>
                     
-                   <li><h3>Там есть мост дьявола</h3>
+                   <li class="reason"><h3>Там есть мост дьявола</h3>
                       Да, по нему можно пройти! Если конечно вы осмелитесь!
                       <img src="img/mountains-sedona.jpg" width="512" height="256" alt="Вид на горы Седоны">
                    </li> 
                   
-                   <li><h3>Небольшая площадь</h3>
+                   <li class="reason"><h3>Небольшая площадь</h3>
                         Все достопримечтаельности находятся очень близко
                    </li>
                     
-                   <li><h3>Красивая дорога</h3>
+                   <li class="reason"><h3>Красивая дорога</h3>
                         Ехать в Седону из Лас-Вегаса совсем не скучно!
                    </li>
                     
-                   <li><h3>Мало туристов</h3>
+                   <li class="reason"><h3>Мало туристов</h3>
                         Большинство едет в Гранд Каньон и толпится там
                    </li>
                 </ol>
@@ -68,21 +71,24 @@
         <section class="interested">
               <h2>Заинтересовались?</h2> 
               <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <a href="hotel-search.visitsedona.com">Поиск гостинице в Седоне</a>
+              <a class="button" href="hotel-search.visitsedona.com">Поиск гостинице в Седоне</a>
         </section>      
+          
               <!-- Здесь будет форма -->
+        <section class="search"> 
+            <h2 class="visually-hidden">Форма поиска жилья</h2>
               <form name="hotel-search" method="get" action="https://echo.visitsedona.com">
                 <fieldset>
                   <legend class="visually-hidden">Параметры поиска</legend>
                     <ul>
                       <li>
-                          <label for="arriaval-date">Дата заезда</label>
-                          <input type="text" id="arriaval-date" name="arriaval-date">
+                          <label for="arriaval-date"π>Дата заезда</label>
+                          <input type="text" id="arriaval-date" name="arriaval-date" value="24 апреля 2017">
                           <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </li>
                       <li>
                           <label for="departure-date">Дата выезда</label>
-                          <input type="text" id="departure-date" name="departure-date">
+                          <input type="text" id="departure-date" name="departure-date" value="4 июля 2017">
                           <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </li>
                       <li>
@@ -99,10 +105,11 @@
                       </li>
                     </ul>
                     
-                    <a href="https://search.visitsedona.com">Найти</a>
+                    <button class="button-search" type="submit>">Найти</button>
                   </fieldset>
                   
               </form>
+          </section>
           
           <div class="Map">
             <h2 class="visually-hidden">Интерактивная карта Седоны</h2>
@@ -113,7 +120,7 @@
         
       </main>
       
-      <footer class="main footer">
+      <footer class="main-footer">
           <p><a href="#visitsedona">#visitsedona</a></p>
             
           <div class="footer-social">
@@ -125,7 +132,7 @@
           </div>
           
           <p class="footer-copyright">websiteby
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
               <img class="html-academy-logo" src="img/logo_name.svg" width="115" height="41" alt="HTML Academy">
             </a>
               

@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.button {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+    
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;    
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .site-navigation-current {
+    color: #766357;
+}
+
+.reason,
+.sedona-advantages,
+.sedona-reasons {
+    text-align: center;   
+}
+
+.sedona-reasons {
+    font-weight: normal;
+}
+
+.sedona-reasons .description {
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333; 
+    font-weight: bold;
+}
+
+.sedona-advantages {
+    list-style: none;   
+}
+
+/* 
+.sedona-advantages li:nth-child(1) {
+    background-image: url("../img/icon-1.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat; 
+    width: 75px;
+    height: 72px
+}
+
+*/
+
+.five-reasons > li:nth-child(1),
+.five-reasons > li:nth-child(2) {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.five-reasons > li:nth-child(3),
+.five-reasons > li:nth-child(4),
+.five-reasons > li:nth-child(5) {
+    background-color: #eeeeee;
+}
+
+.sedona-advantages li {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.interested {
+    text-align: center; 
+}
+
+.interested a {
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.interested a:hover,
+.interested a:focus {
+    color: #ffffff;
+    background-color: #604e43;
+}
+
+.interested a:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.search {
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000; 
+    background-color: #ffffff;
+    border: 2px solid #766357;
+}
+
+.search ul{
+    list-style: none;
+}
+
+.search input {
+   font-size: 14px;
+   line-height: 26px;
+   font-weight: bold;
+   color: #000000;
+   background-color: #f2f2f2;
+   border: none;
+}
+
+.search input:focus {
+   background-color: #ebebeb;
+   border: none;
+}
+
+.search input:active {
+   background-color: #ffffff;
+   border: 2px solid #ebebeb;
+}
+
+.button-search {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff; 
+    background-color: #81b3d2;
+}
+
+.button-search:hover,
+.button-search:focus {
+    background-color: #669ec0;
+}
+
+.button-search:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+    color: #000000;
+    text-transform: uppercase;    
+    background-color: rgba (255, 255, 255, 0.9);
+}
+
+a .details {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+
+.main-footer a {
+    color: #000000;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.social-button {
+    background-color: #81b3d2;  
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.footer-social ul{
+    list-style: none;
+}
+
+.copyright-button {
+    color: #000000;
+}
+
+.copyright-button:hover,
+.copyright-button:focus {
+    color: #81b3d2;
+}
+
+.copyright-button:active {
+    color: #bdbbbc;
+    color: rgba(242, 2425, 242, 0.3);
+}
+
+
+
+
+
+
+.filters {
+    background-color: #000000;
+    background-image: url("../img/inner-back.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;  
+    color: #ffffff;   
+    width: 768px;
+    height: 418px;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filters legend {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filter-option:disabled + label {
+    color: #6a6a6a;
+}
+
+.filters .filter-button {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff;
+    font-weight: normal;
+}
+
+.filters .filter-button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.search-filters h3 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.search-filters ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting-type li a{
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-type li a:hover {
+    color: #81b3d2;
+    text-decoration: none;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-type li a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sorting-type .sorting-type-current {
+    color: #81b3d2;
+}
+
+.sorting-style ul {
+    list-style: none;
+}
+
+/* треугольнички сортировки */
+
+.search-results ul {
+    list-style: none;
+}
+
+
+.search-results li {
+    border-top: 1px solid #000000;
+}
+
+.search-results li:last-child {
+    border-bottom: 1px solid #000000;
+}
+
+.search-resul-item h3 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.search-resul-item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.search-resul-item a {
+    color: #000000;
+}
+
+.search-resul-item a:hover {
+    color: #81b3d2;
+}
+
+.search-resul-item a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-resul-item .details {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #81b3d2;
+}
+
+.search-resul-item .details:hover {
+    background-color: #669ec0;
+}
+
+.search-resul-item .details:active {
+    background-color: #5496bd;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-resul-item .booking {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #766357;
+}
+
+.search-resul-item .booking:hover {
+    background-color: #604e43;
+}
+
+.search-resul-item .booking:active {
+    background-color: #503e33;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-resul-item .rating {
+    background-color: #f2f2f2;
+}
