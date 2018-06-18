@@ -15,7 +15,6 @@ a {
     text-decoration: none;
 }
 
-
 .button {
     font: inherit;
     text-align: center;
@@ -23,11 +22,11 @@ a {
     text-transform: uppercase;
     border: none;
 }
-    
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
-    color: #000000;    
+    color: #000000;
     background-color: #ffffff;
 }
 
@@ -55,29 +54,59 @@ a {
 .reason,
 .sedona-advantages,
 .sedona-reasons {
-    text-align: center;   
+    text-align: center;
 }
 
 .sedona-reasons {
     font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .sedona-reasons .description {
     font-size: 21px;
     line-height: 26px;
-    color: #333333; 
+    color: #333333;
+    font-weight: bold;
+}
+
+.sedona-reasons p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.five-reasons h3 {
+    font-size: 21px;
+    line-height: 21px;
     font-weight: bold;
 }
 
 .sedona-advantages {
-    list-style: none;   
+    list-style: none;
 }
 
-/* 
+.sedona-reasons ol {
+    list-style: none;
+}
+
+.sedona-reasons b {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.sedona-reasons p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+/*
 .sedona-advantages li:nth-child(1) {
     background-image: url("../img/icon-1.svg");
     background-position: 0 0;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 75px;
     height: 72px
 }
@@ -102,12 +131,28 @@ a {
 }
 
 .interested {
-    text-align: center; 
+    text-align: center;
 }
 
 .interested a {
     background-color: #766357;
     color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.interested h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.interested p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
 }
 
 .interested a:hover,
@@ -125,7 +170,7 @@ a {
     text-align: center;
     font-size: 14px;
     line-height: 26px;
-    color: #000000; 
+    color: #000000;
     background-color: #ffffff;
     border: 2px solid #766357;
 }
@@ -157,8 +202,9 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color: #ffffff; 
+    color: #ffffff;
     background-color: #81b3d2;
+    text-transform: uppercase;
 }
 
 .button-search:hover,
@@ -173,19 +219,28 @@ a {
 
 .main-footer {
     color: #000000;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     background-color: rgba (255, 255, 255, 0.9);
 }
 
 a .details {
     font-weight: bold;
     color: #ffffff;
-    background-color: #81b3d2;
 }
+
 
 
 .main-footer a {
     color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.main-footer .footer-copyright {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
 }
 
 .footer-social {
@@ -193,7 +248,7 @@ a .details {
 }
 
 .social-button {
-    background-color: #81b3d2;  
+    background-color: #81b3d2;
 }
 
 .social-button:hover,
@@ -232,8 +287,8 @@ a .details {
     background-color: #000000;
     background-image: url("../img/inner-back.jpg");
     background-position: 0 0;
-    background-repeat: no-repeat;  
-    color: #ffffff;   
+    background-repeat: no-repeat;
+    color: #ffffff;
     width: 768px;
     height: 418px;
 }
@@ -283,19 +338,25 @@ a .details {
     line-height: 18px;
 }
 
-.sorting-type li a{
+.search-filters p {
+  font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.sorting-type-variant a{
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-type li a:hover {
+.sorting-type-variant a:hover {
     color: #81b3d2;
     text-decoration: none;
     border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-type li a:active {
+.sorting-type-variant a:active {
     color: #000000;
     text-decoration: none;
 }
