@@ -15,6 +15,55 @@ a {
     text-decoration: none;
 }
 
+.main-header {
+    margin-bottom: 0px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 770px;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 0;
+    width: 138px;
+    height: 70px;
+}
+
+.site-navigation .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.site-navigation .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.welcome-to-sedona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+    height: 512px;
+    margin-bottom: 55px;
+}
+
 .button {
     font: inherit;
     text-align: center;
@@ -182,7 +231,7 @@ a {
 .search input {
    font-size: 14px;
    line-height: 26px;
-   font-weight: bold;
+   font-weight: normal;
    color: #000000;
    background-color: #f2f2f2;
    border: none;
@@ -228,7 +277,7 @@ a .details {
     color: #ffffff;
 }
 
-
+/* стили футера (начало)*/
 
 .main-footer a {
     color: #000000;
@@ -278,10 +327,7 @@ a .details {
     color: rgba(242, 2425, 242, 0.3);
 }
 
-
-
-
-
+/* стили футера (конец)*/
 
 .filters {
     background-color: #000000;
@@ -324,6 +370,12 @@ a .details {
 .filters .filter-button:hover {
     color: #000000;
     background-color: #ffffff;
+}
+
+.filter-option label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
 }
 
 
@@ -430,6 +482,7 @@ a .details {
 }
 
 .search-resul-item .booking:hover {
+    color: #ffffff;
     background-color: #604e43;
 }
 
