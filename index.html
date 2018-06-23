@@ -8,53 +8,80 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class="container">
+
       <header class="main-header">
           <nav class="main-navigation">
               <a class="main-header-logo">
                  <img src="img/main-header-logo.png" width="138" height="70" alt="Герб города Седона">
               </a>
+
+
               <ul class="site-navigation">
-                <div class="left">
                   <li><a href="information.html">Информация</a></li>
                   <li><a href="photovideo.htmal">Фото и видео</a></li>
-                </div>
-                <div class="right">
                   <li><a href="statemap.html">Карта штата</a></li>
                   <li><a href="inner.html">Гостиницы</a></li>
-                </div>
               </ul>
+
           </nav>
       </header>
+
+    </div>
+
       <main class="container">
 
         <h1 class="visually-hidden">Седона</h1>
 
         <section class="welcome-to-sedona">
             <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-
-          <img src="img/welcome-to-sedona.jpg" width="768" Height="512" alt="Добро пожаловать в Седону!">
+            <img src="img/Welcome.png" width="188" height="45" alt="Добро пожаловать"><br>
+            <img src="img/to%20the%20gorgeous.png" width="176" height="30" alt="в великолепную"><br>
+            <img src="img/Sedona.png" width="458" height="78" alt="Седону"><br>
+            <img src="img/Because%20the%20Grand%20%20Canyon%20sucks_.png" width="296" height="80" alt="потому что Гранд Каньон не такой крутой">
+            <div class="shape"></div>
         </section>
 
         <section class="sedona-reasons">
+
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-            <div class="description">Седона - небольшой городок в Аризоне,<br>Заслуживающий большего!</div>
+              <div class="description">Седона - небольшой городок в Аризоне,<br>Заслуживающий большего!</div>
               <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+
                 <ol class="five-reasons" start="1">
-                  <li class="reason"><h3>Настоящий городок</h3>
-                    №1<br><p>Седона - не атракцион для туристов, там течет своя жизнь</p>
-                    <img src="img/sedona-view.jpg" width="512" height="256" alt="Вид на улицы Седона">
+
+                  <li class="reason">
+                   <div class="town">
+                     <div>
+                       <h3>Настоящий городок</h3>
+                       №1<br><p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+                     </div>
+
+                     <img src="img/sedona-view.jpg" width="800" height="256" alt="Вид на улицы Седона">
+
+                   </div>
 
                       <ul class="sedona-advantages">
-                        <li><b>Жилье</b><p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
-                        <li><b>Еда</b><p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
-                        <li><b>Сувениры</b><p>Не только китайского, но и местного производства!</p></li>
+                        <li class="advantage"><b>Жилье</b><p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
+                        <li class="advantage"><b>Еда</b><p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
+                        <li class="advantage"><b>Сувениры</b><p>Не только китайского, но и местного производства!</p></li>
                       </ul>
                    </li>
 
-                   <li class="reason"><h3>Там есть мост дьявола</h3>
-                     №2<br><p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>p>
-                      <img src="img/mountains-sedona.jpg" width="512" height="256" alt="Вид на горы Седоны">
+                   <li class="bridge">
+
+                      <div>
+                        <h3>Там есть мост дьявола</h3>
+                          №2<br><p>Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
+                      </div>
+
+
+
+                      <img src="img/mountains-sedona.jpg" width="800" height="256" alt="Вид на горы Седоны">
                    </li>
+
+                 <div class="other-reasons">
 
                    <li class="reason"><h3>Небольшая площадь</h3>
                         №3<br><p>Все достопримечтаельности находятся очень близко</p>
@@ -67,15 +94,20 @@
                    <li class="reason"><h3>Мало туристов</h3>
                         №5<br><p>Большинство едет в Гранд Каньон и толпится там</p>
                    </li>
+                  </div>
                 </ol>
 
 
         </section>
 
         <section class="interested">
+          <div class="interested-container">
               <h2>Заинтересовались?</h2>
               <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
               <a class="button" href="hotel-search.visitsedona.com">Поиск гостинице в Седоне</a>
+
+
         </section>
 
               <!-- Здесь будет форма -->
@@ -124,8 +156,10 @@
 
       </main>
 
-      <footer class="main-footer">
-          <p><a href="#visitsedona">#visitsedona</a></p>
+  <div class="container">
+        <footer class="main-footer">
+
+          <div class="footer-tag"><a href="#visitsedona">#visitsedona</a></div>
 
           <div class="footer-social">
             <ul>
@@ -142,6 +176,9 @@
 
           </p>
 
-      </footer>
+        </footer>
+
+    </div>
+
   </body>
 </html>
