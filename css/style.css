@@ -17,16 +17,9 @@ a {
     text-decoration: none;
 }
 
-.main-header {
-    width: 100%;
-    margin: 0;
-}
-
-.main-header-logo {
-    width: 138px;
-    height: 70px;
-    position: absolute;
-    left: 50%;
+img {
+     max-width: 100%;
+     height: auto;
 }
 
 .container {
@@ -36,9 +29,25 @@ a {
     margin-bottom: 0px;
 }
 
-.site-navigation {
-    position: relative;
+/* стили для хедера начало*/
+.main-header {
+    width: 100%;
+    margin: 0;
+}
 
+.main-navigation {
+    position: relative;
+    margin-bottom: 0px:
+}
+
+.main-header-logo {
+    width: 138px;
+    height: 70px;
+    position: absolute;
+    right: 533px;
+}
+
+.site-navigation {
     width: 1050px;
     margin: 0;
     padding-left: 75px;
@@ -48,6 +57,12 @@ a {
     flex-direction: row;
     justify-content: space-between;
 
+}
+
+.site-navigation {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    vertical-align: middle;
 }
 
 .site-navigation li:first-child,
@@ -74,6 +89,8 @@ a {
     color: #766357;
 }
 
+/* стили для хедера конец*/
+
 .welcome-to-sedona {
     width: 1200px;
     height: 510px;
@@ -87,6 +104,10 @@ a {
     height: 57px;
     background: url("../img/Shape%201%20copy%203.png") no-repeat 0 100%;
     color: #ffffff;
+}
+
+.comtainer .welcome-to-sedona {
+    margin-bottom: 0px;
 }
 
 .five-reasons .town,
