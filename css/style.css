@@ -22,6 +22,17 @@ img {
      height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -45,6 +56,7 @@ img {
     height: 70px;
     position: absolute;
     right: 533px;
+    z-index: 1;
 }
 
 .site-navigation {
@@ -56,7 +68,6 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .site-navigation {
@@ -87,75 +98,6 @@ img {
 
 .site-navigation .current {
     color: #766357;
-}
-
-/* стили для хедера конец*/
-
-.welcome-to-sedona {
-    width: 1200px;
-    height: 510px;
-    background: url("../img/background%20photo.jpg") no-repeat 0 50%;
-    margin-bottom: 0px;
-    text-align: center;
-}
-
-.welcome-to-sedona .shape {
-    width: 1200px;
-    height: 57px;
-    background: url("../img/Shape%201%20copy%203.png") no-repeat 0 100%;
-    color: #ffffff;
-}
-
-.comtainer .welcome-to-sedona {
-    margin-bottom: 0px;
-}
-
-.five-reasons .town,
-.other-reasons {
-    display: flex;
-    flex-direction: row;
-}
-
-.town h3,
-.bridge h3 {
-    padding-top: 40px;
-}
-.five-reasons .bridge {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.sedona-advantages {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-.sedona-reasons {
-    background-color: #ffffff;
-    margin-bottom: 0;
-}
-
-.five-reasons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sedona-advantages .advantage {
-    width: 400px;
-}
-
-.other-reasons .reason {
-    width: 400px;
-    background-color: #eeeeee;
-    text-align: center;
-    padding-left: 95px;
-    padding-right: 95px;
-    padding-top: 45px;
-    padding-bottom: 60px;
-    margin: 0;
 }
 
 .site-navigation {
@@ -190,30 +132,71 @@ img {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.reason,
-.sedona-advantages,
-.sedona-reasons {
-    text-align: center;
+/* стили для хедера конец*/
+
+
+
+.welcome-to-sedona {
+    width: 1200px;
+    height: 510px;
+    background: url("../img/background%20photo.jpg") no-repeat 0 50%;
+    background-size: 1200px 510px;
+    margin-bottom: 0px;
+    position: relative;
 }
 
-.sedona-reasons {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
+.welcome-to-sedona img {
+    padding-top: 75px;
+    padding-left: 370px;
+}
+
+.welcome-to-sedona .shape {
+    width: 1200px;
+    height: 57px;
+    background: url("../img/Shape%201%20copy%203.png");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: absolute;
+    top: 453px;
+    left: 0px;
+}
+
+.container .welcome-to-sedona {
     margin-bottom: 0px;
 }
+
+
 
 .sedona-reasons .description {
     font-size: 21px;
     line-height: 26px;
     color: #333333;
     font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .sedona-reasons p {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+/* cетка галвной страницы начало */
+.five-reasons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sedona-advantages .advantage {
+    width: 400px;
 }
 
 .five-reasons h3 {
@@ -236,10 +219,122 @@ img {
     font-weight: bold;
 }
 
+.five-reasons > li:nth-child(1),
+.five-reasons > li:nth-child(2) {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.five-reasons > li:nth-child(3),
+.five-reasons > li:nth-child(4),
+.five-reasons > li:nth-child(5) {
+    background-color: #eeeeee;
+}
+
+.sedona-advantages li {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+
+.five-reasons {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.five-reasons .town {
+   display: flex;
+   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.five-reasons .bridge {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bridge p {  
+   text-align: center;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.sedona-advantages {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.town div {
+     width: 400px;
+}
+
+.town h3,
+.bridge h3,
+.reason h3 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.sedona-reasons {
+    background-color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+.five-reasons .reason {
+    width: 400px;
+    background-color: #eeeeee;
+    text-align: center;
+    margin: 0;
+}
+
+.reason,
+.sedona-reasons {
+    text-align: center;
+}
+
+.sedona-reasons .description {
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: bold;
+}
+
 .sedona-reasons p {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 26px;
     font-weight: normal;
+}
+
+.five-reasons h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.sedona-advantages {
+    list-style: none;   
+    width: 1200px;
+}
+
+.sedona-reasons ol {
+    list-style: none;
+}
+
+.sedona-reasons b {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
 }
 
 .five-reasons > li:nth-child(1),
@@ -258,7 +353,21 @@ img {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
+    padding-left: 64px;
+    padding-right: 64px;
 }
+
+.reason p {
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 60px;
+}
+
+/* cетка галвной страницы конец */
+
 
 .interested {
     text-align: center;
@@ -531,7 +640,6 @@ a .details {
 }
 
 .sorting-style {
-
     padding-left: 500px;
 }
 
