@@ -141,6 +141,7 @@ img {
     height: 510px;
     background: url("../img/background%20photo.jpg") no-repeat 0 50%;
     background-size: 1200px 510px;
+    background-color: #d6e7f1;
     margin-bottom: 0px;
     position: relative;
 }
@@ -157,7 +158,7 @@ img {
     background-repeat: no-repeat;
     color: #ffffff;
     position: absolute;
-    top: 453px;
+    bottom: -1px;
     left: 0px;
 }
 
@@ -324,6 +325,8 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    padding-left: 125px;
+    padding-right: 120px;
 }
 
 .sedona-advantages {
@@ -345,7 +348,13 @@ img {
     margin: 0;
     padding: 0;
     padding-top: 30px;
+
 }
+
+.sedona-advantages {
+    list-style: none;
+}
+
 
 .advantage {
     padding-top: 160px;
@@ -359,7 +368,7 @@ img {
 
     position: absolute;
     top: 60px;
-    left: 163px;
+    left: 180px;
 
 }
 
@@ -368,7 +377,7 @@ img {
     position: absolute;
 
     top: 60px;
-    left: 163px;
+    left: 180px;
 }
 
 .sedona-advantages li:last-child::before {
@@ -377,7 +386,7 @@ img {
     position: absolute;
 
     top: 60px;
-    left: 163px;
+    left: 180px;
 }
 
 
@@ -397,8 +406,8 @@ img {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 75px;
+    padding-right: 40px;
 }
 
 .reason p {
@@ -410,10 +419,8 @@ img {
     padding-bottom: 60px;
 }
 
-
-
-
 /* cетка галвной страницы конец */
+
 
 
 .interested {
@@ -463,6 +470,7 @@ img {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/*Форма поиска жилья*/
 .search {
     text-align: center;
     font-size: 14px;
@@ -470,6 +478,8 @@ img {
     color: #000000;
     background-color: #ffffff;
     border: 2px solid #766357;
+
+    padding: 55px;
 }
 
 .search ul{
@@ -537,7 +547,8 @@ a .details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
+    padding-bottom: 35px;
 }
 
 .main-footer .footer-copyright {
@@ -555,6 +566,10 @@ a .details {
 .footer-copyright {
     margin: 0;
     width: 240px;
+}
+
+.footer-copyright svg {
+    vertical-align: middle;
 }
 
 .footer-tag {
@@ -748,8 +763,14 @@ a .details {
 }
 
 .sorting-style {
+    width: 35px;
+
+    display: flex;
+    justify-content: space-between;
     margin: 0;
-    padding-left: 500px;
+    padding-left: 490px;
+
+    padding-right: 0;
     padding-top: 35px;
 }
 
@@ -758,10 +779,6 @@ a .details {
     padding-top:  35px;
     padding-bottom: 35px;
     margin: 0;
-}
-
-.search-filters-container .sorting-style {
-    display: flex;
 }
 
 .search-filters h3 {
@@ -810,19 +827,27 @@ a .details {
 
 .sorting-triangle {
     text-align: right;
-    color: #cacaca;
 }
 
-.sorting-triangle:hover,
-.sorting-triangle:focus {
+.sorting-triangle polygon {
+     fill: #cacaca;
+}
+
+.sorting-triangle:hover polygon,
+.sorting-triangle:focus polygon,
+.sorting-triangle-current:hover polyline,
+.sorting-triangle-current:focus polyline {
     fill: #231f20;
 }
 
-.sorting-triangle:active,
-.sorting-triangle-current {
+.sorting-triangle:active polygon,
+.sorting-triangle-current:active polyline {
     fill: #81b3d2;
 }
 
+.sorting-triangle-current polyline {
+    fill: #81b3d2;
+}
 
 /* Результаты поиска гостиницы начало */
 
@@ -849,15 +874,11 @@ a .details {
     font-size: 21px;
     line-height: 26px;
     margin: 0;
+    padding-bottom: 15px;
+
 }
 
-.hotel-description p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-}
-
-.search-resul-item {
+.search-result-item {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
@@ -879,6 +900,19 @@ a .details {
      width: 260px;
      padding-top: 25px;
      padding-bottom: 30px;
+     flex-grow: 1;
+}
+
+.hotel-type {
+     display: inline-block;
+     min-width: 110px;
+
+     padding-right: 5px;
+     padding-bottom: 15px;
+}
+
+.price {
+     display: inline-block;
 }
 
 .hotel-stars {
@@ -890,6 +924,8 @@ a .details {
      display: flex;
      flex-direction: column;
      justify-content: space-between;
+
+     padding-right: 66px;
 }
 
 .search-result-item a {
@@ -946,9 +982,7 @@ a .details {
 .search-result-item .rating {
     background-color: #f2f2f2;
     color: #666666;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
+
     text-align: center;
     width: 110px;
 }
