@@ -88,15 +88,25 @@
                   <fieldset>
                     <legend>Стоимость в сутки (р):</legend>
 
-                      от<input type="number" min="0" step="1" class="visually-hidden filter-input min-price" value="0">до<input type="number" min="0" step="1000" class="visually-hidden filter-input max-price" value="3000"><br>
-
-                      <div class="slider">
-                          <span><img src="img/filter-button.jpg" width="20" height="22" alt="кнопка фильтра"></span>
-                          <span><img src="img/filter-button.jpg" width="20" height="22" alt="кнопка фильтра"></span>
+                      <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                       </div>
 
+                      <div class="range-controls">
+                        <div class="scale">
+                        <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                      </div>
+
+                      <button type="submit" class="button filter-button btn-transparent">Показать</button>
+
+
+
                    </fieldset>
-                   <button type="submit" class="button filter-button ">Показать</button>
+
 
                   </div>
 

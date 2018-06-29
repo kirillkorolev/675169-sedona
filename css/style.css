@@ -146,6 +146,15 @@ img {
     position: relative;
 }
 
+.map {
+    width: 1200px;
+    background: url("../img/map.jpg") no-repeat 0 50%;
+    background-size: 1200px 593px;
+
+
+
+}
+
 .welcome-to-sedona img {
     padding-top: 75px;
     padding-left: 370px;
@@ -182,9 +191,6 @@ img {
     margin: 0;
     padding-bottom: 50px;
 }
-
-
-
 
 
 /* cетка галвной страницы начало */
@@ -237,14 +243,14 @@ img {
 }
 
 .five-reasons {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .five-reasons .town {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
 }
 
 .five-reasons .bridge {
@@ -361,6 +367,7 @@ img {
     padding-bottom: 80px;
 
     position: relative;
+
 }
 
 .sedona-advantages li:first-child::before {
@@ -368,7 +375,8 @@ img {
 
     position: absolute;
     top: 60px;
-    left: 180px;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
@@ -377,7 +385,8 @@ img {
     position: absolute;
 
     top: 60px;
-    left: 180px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sedona-advantages li:last-child::before {
@@ -386,7 +395,8 @@ img {
     position: absolute;
 
     top: 60px;
-    left: 180px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -406,8 +416,8 @@ img {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
-    padding-left: 75px;
-    padding-right: 40px;
+    padding-left: 58px;
+    padding-right: 57px;
 }
 
 .reason p {
@@ -482,9 +492,30 @@ img {
     padding: 55px;
 }
 
-.search ul{
+.interested .button {
+    position: relative;
+}
+
+.search ul {
     list-style: none;
 }
+
+.search {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 570px;
+    margin: 0;
+    padding: 0;
+}
+
 
 .search input {
    font-size: 14px;
@@ -512,6 +543,7 @@ img {
     color: #ffffff;
     background-color: #81b3d2;
     text-transform: uppercase;
+    padding: 15px 195px;
 }
 
 .button-search:hover,
@@ -641,6 +673,8 @@ a .details {
     flex-direction: row;
     padding-left: 75px;
     padding-right: 75px;
+    justify-content: space-between;
+
 }
 
 .type {
@@ -675,6 +709,8 @@ a .details {
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
+
+    margin-top: 25px;
 }
 
 .filters ul {
@@ -684,6 +720,7 @@ a .details {
 .filter-option {
     margin-bottom: 20px;
     margin-left: 40px;
+
 }
 
 .filter-option label {
@@ -702,8 +739,6 @@ a .details {
      width: 23px;
      height: 23px;
 
-     border: 2px solid #ffffff;
-
      left: -40px;
      top: 0;
 
@@ -713,7 +748,11 @@ a .details {
       content: url("../img/checkbox-on.svg");
       position: absolute;
 
+      width: 23px;
+      height: 23px;
 
+      left: -40px;
+      top: 0;
 }
 
 .filter-option:disabled + label {
@@ -757,9 +796,8 @@ a .details {
     padding-bottom: 35px;
 }
 
-.sorting-type li:first-child,
-.sorting-type li:nth-child(2) {
-    padding-right: 35px;
+.sorting-type li:not(:last-child) {
+     padding-right: 35px;
 }
 
 .sorting-style {
@@ -768,8 +806,8 @@ a .details {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding-left: 490px;
 
+    margin-left: auto;
     padding-right: 0;
     padding-top: 35px;
 }
@@ -847,6 +885,115 @@ a .details {
 
 .sorting-triangle-current polyline {
     fill: #81b3d2;
+}
+
+.price-controls {
+    height: 35px;
+    margin-bottom: 20px;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+
+    position: relative;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+
+    width: 2px;
+    height: 23px;
+
+    background: #ffffff;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%)
+}
+
+
+.price-controls label {
+     display: inline-block;
+     vertical-align: top;
+
+     cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+     width: 155px;
+     padding-left: 10px;
+}
+
+.price-controls input {
+     width: 50px;
+     margin: 0;
+
+     font: inherit;
+     color: inherit;
+
+     background: none;
+     border: none;
+
+}
+
+.range-controls {
+     position: relative;
+
+     margin-bottom: 30px;
+}
+
+.range-controls .scale {
+     height: 2px;
+
+     background: rgba(144, 130, 129, 0.3);
+}
+
+.range-controls .bar {
+     width: 80%;
+     height: 2px;
+
+     background: #ffffff;
+}
+
+.range-toggle {
+     width: 4px;
+     height: 4px;
+
+     background: #ababab;
+     border: 8px solid #ffffff;
+     border-radius: 50%;
+     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+     cursor: pointer;
+
+     position: absolute;
+     top: -9px;
+}
+
+.range-toggle-min {
+     left: 0;
+}
+
+.range-toggle-max {
+     left: 80%;
+}
+
+.range-toggle:hover {
+     width: 6px;
+     height: 6px;
+}
+
+btn-transparent {
+     display: block;
+     margin: 0 auto;
+     padding: 6px 35px;
+
+     background: transparent;
+     border: 2px solid #ffffff;
+     border-radius: 2px;
+     cursor: pointer;
+
 }
 
 /* Результаты поиска гостиницы начало */
