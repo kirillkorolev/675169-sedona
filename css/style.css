@@ -38,6 +38,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
+    box-shadow: 5 0 15 0 #000101;
 }
 
 /* стили для хедера начало*/
@@ -246,9 +247,9 @@ img {
 }
 
 .five-reasons .town {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .five-reasons .bridge {
@@ -290,6 +291,43 @@ img {
     margin: 0;
     padding-top: 50px;
     padding-bottom: 20px;
+}
+
+.town span,
+.bridge span,
+.reason span {
+   position: relative;
+}
+
+.town span::after,
+.bridge span::after,
+.reason span::after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 1px;
+    height: 10px;
+    transform: rotate(90deg);
+    right: -8px;
+    top: 3px;
+}
+
+.town span::before,
+.bridge span::before,
+.reason span::before {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 1px;
+    height: 10px;
+    transform: rotate(90deg);
+    top: 3px;
+    left: -8px;
+}
+
+.reason span::after,
+.reason span::before {
+    background: #000000;
 }
 
 .sedona-reasons {
@@ -547,19 +585,23 @@ img {
 
 .hotel-search input:focus,
 .hotel-search input:hover {
-   background-color: #ebebeb;
-   border: none;
+    background-color: #ebebeb;
+    border: none;
 }
 
 .hotel-search input:active {
-   background-color: #ffffff;
-   border: 2px solid #ebebeb;
+    background-color: #ffffff;
+    border: 2px solid #ebebeb;
 }
 
-.calendar-icon {
-   background-image: url("../img/calendar.svg");
-   background-position: ;
-   background-repeat: no-repeat;
+.hotel-search label {
+    margin-right: 20px;
+}
+
+.calendar-button {
+    color: ;
+    position: absolute;
+
 }
 
 .button-search {
@@ -738,12 +780,12 @@ a .details {
 }
 
 .filters ul {
-    list-style: none;
+     list-style: none;
 }
 
 .filter-option {
-    margin-bottom: 20px;
-    margin-left: 40px;
+     margin-bottom: 20px;
+     margin-left: 40px;
 
 }
 
@@ -780,7 +822,14 @@ a .details {
 }
 
 
-.filter-option:disabled + label {
+.filter-input-checkbox:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+}
+
+
+.filter-input-checkbox:disabled + label {
     color: #6a6a6a;
 }
 
