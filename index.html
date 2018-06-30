@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="container">
+  <div class="container">
 
       <header class="main-header">
           <nav class="main-navigation">
@@ -26,10 +26,6 @@
 
           </nav>
       </header>
-
-    </div>
-
-    <div class="container">
 
       <main>
 
@@ -106,42 +102,47 @@
               <a class="button" href="hotel-search.visitsedona.com">Поиск гостинице в Седоне</a>
 
 
-        </section>
+
 
         <section class="search">
             <h2 class="visually-hidden">Форма поиска жилья</h2>
-              <form name="hotel-search" method="get" action="https://echo.visitsedona.com">
+              <form class="hotel-search" name="hotel-search" method="get" action="https://echo.visitsedona.com">
                 <fieldset>
                   <legend class="visually-hidden">Параметры поиска</legend>
-                    <ul>
-                      <li>
+
+                      <p>
                           <label for="arriaval-date"π>Дата заезда</label>
                           <input type="text" id="arriaval-date" name="arriaval-date" value="24 апреля 2017">
-                          <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
-                      </li>
-                      <li>
+
+                          <input class="calendar-icon" id="arriaval-date" type="text" name="arriaval-date">
+
+
+                      </p>
+                      <p>
                           <label for="departure-date">Дата выезда</label>
                           <input type="text" id="departure-date" name="departure-date" value="4 июля 2017">
                           <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
-                      </li>
-                      <li>
+                      </p>
+                      <p>
                           <label for="grownups">Взрослые</label>
                           <button type="button">-</button>
                           <input type="number" id="grownups" name="grownups-ammount" min="1" step="1" value="1">
                           <button type="button">+</button>
-                      </li>
-                      <li>
+
+
                           <label for="children">Дети</label>
                           <button type="button">-</button>
                           <input type="number" id="children" name="children-ammount" min="0" step="1" value="0">
                           <button type="button">+</button>
-                      </li>
-                    </ul>
+                      </p>
+
 
                     <button class="button-search" type="submit>">Найти</button>
                   </fieldset>
 
               </form>
+          </section>
+
           </section>
 
           <div class="map">
@@ -153,11 +154,8 @@
 
       </main>
 
-    </div>
 
-
-  <div class="container">
-        <footer class="main-footer">
+      <footer class="main-footer">
 
           <div class="footer-tag"><a href="#visitsedona">#visitsedona</a></div>
 
