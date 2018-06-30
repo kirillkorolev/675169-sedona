@@ -114,25 +114,28 @@
                           <label class="arriaval-date" for="arriaval-date">Дата заезда</label>
                           <input type="text" id="arriaval-date" name="arriaval-date" value="24 апреля 2017">
 
-                          <button class="calendar-button" type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
+                          <button class="form-button calendar-button-arriaval" type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </p>
                       <p>
-                          <label class="calendar-button"  for="departure-date">Дата выезда</label>
+                          <label   for="departure-date">Дата выезда</label>
                           <input type="text" id="departure-date" name="departure-date" value="4 июля 2017">
 
-                          <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
+                          <button class="form-button calendar-button-departure" type="button"><img src="img/calendar.svg" width="21" height="22" alt="календарь иконка"></button>
                       </p>
-                      <p>
-                          <label for="grownups">Взрослые</label>
-                          <button class="minus" type="button">-</button>
-                          <input type="number" id="grownups" name="grownups-ammount" min="1" step="1" value="1">
-                          <button class="plus" type="button">+</button>
 
+                      <p>
+
+                          <label for="grownups">Взрослые</label>
+                          <button class="form-button minus-grownups" type="button">-</button>
+                          <input type="number" id="grownups" name="grownups-ammount" min="1" step="1" value="1">
+                          <button class="form-button plus-grownups" type="button">+</button>
 
                           <label for="children">Дети</label>
-                          <button class="minus" type="button">-</button>
+                          <button class="form-button minus-children" type="button">-</button>
                           <input type="number" id="children" name="children-ammount" min="0" step="1" value="0">
-                          <button class="plus" type="button">+</button>
+                          <button class="form-button plus-children" type="button">+</button>
+
+
                       </p>
 
 

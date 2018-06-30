@@ -558,11 +558,6 @@ img {
     padding: 0;
 }
 
-.search p {
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
-}
 
 .hotel-search fieldset{
     margin: 55px;
@@ -583,6 +578,27 @@ img {
     border: none;
 }
 
+.hotel-search input[type="number"] {
+    box-sizing: border-box;
+    padding: 9px 45px;
+    width: 115px;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.search p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
 .hotel-search input:focus,
 .hotel-search input:hover {
     background-color: #ebebeb;
@@ -598,10 +614,72 @@ img {
     margin-right: 20px;
 }
 
-.calendar-button {
-    color: ;
+.form-button {
     position: absolute;
+    border: none;
+    background-color: #f2f2f2;
+    color: #a9a9a9;
+}
 
+.calendar-button-arriaval {
+    right: 65px;
+    top: 65px;
+}
+
+.calendar-button-departure {
+    right: 65px;
+    top: 140px;
+}
+
+.calendar-button-arriaval:hover,
+.calendar-button-departure:hover,
+.calendar-button-arriaval:focus,
+.calendar-button-departure:focus {
+    fill: #000000;
+    border: none;
+}
+
+.calendar-button-arriaval:active,
+.calendar-button-departure:active {
+    fill: #81b3d2;
+}
+
+.minus-grownups {
+    left: 175px;
+    top: 218px;
+}
+
+.plus-grownups {
+    top: 218px;
+    left: 255px;
+}
+
+.minus-children {
+    top: 218px;
+    right: 140px;
+}
+
+.plus-children {
+    top: 218px;
+    right: 65px;
+}
+
+.minus-grownups:hover,
+.minus-grownups:focus,
+.minus-children:hover,
+.minus-children:focus,
+.plus-grownups:hover,
+.plus-grownups:focus,
+.plus-children:hover,
+.plus-children:focus {
+    color: #000000;
+}
+
+.minus-grownups:active,
+.minus-children:active,
+.plus-grownups:active,
+.plus-children:active {
+    color: #81b3d2;
 }
 
 .button-search {
