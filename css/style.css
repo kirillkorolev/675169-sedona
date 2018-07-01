@@ -23,14 +23,14 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -38,7 +38,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    box-shadow: 5 0 15 0 #000101;
+    box-shadow: 0 0 15px 0 #000101;
 }
 
 /* стили для хедера начало*/
@@ -474,10 +474,6 @@ img {
     margin-bottom: 0;
 }
 
-.interested-container {
-    padding-top: 55px;
-    padding-bottom: 50px;
-}
 
 .interested a {
     background-color: #766357;
@@ -502,6 +498,15 @@ img {
     line-height: 24px;
     font-weight: normal;
     text-align: center;
+
+}
+
+.interested-container {
+    padding-top: 55px;
+    padding-bottom: 50px;
+    font-weight: normal;
+    margin-left: 383px;
+    margin-right: 382px;
 }
 
 .interested a:hover,
@@ -519,7 +524,9 @@ img {
 .search {
     text-align: center;
     font-size: 14px;
+
     line-height: 26px;
+    font-weight: bold;
     color: #000000;
     background-color: #ffffff;
     border: 2px solid #766357;
@@ -548,8 +555,31 @@ img {
     border: none;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
     align-content: stretch;
+}
+
+.form-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    width: 460px;
+}
+
+.form-grownups {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.form-grownups label,
+.form-children label {
+  padding-top: 10px;
+}
+.form-children {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
 }
 
 .search fieldset {
@@ -571,7 +601,7 @@ img {
 
     font-size: 14px;
     line-height: 26px;
-    font-weight: normal;
+    font-weight: bold;
     color: #000000;
     text-transform: uppercase;
     background-color: #f2f2f2;
@@ -586,26 +616,26 @@ img {
 
     font-size: 14px;
     line-height: 26px;
-    font-weight: normal;
+    font-weight: bold;
     color: #000000;
     text-transform: uppercase;
     background-color: #f2f2f2;
-    border: none;
+    border: 2px solid #f2f2f2;
 }
 
 .search p {
     margin-top: 0;
     margin-bottom: 30px;
     padding: 0;
+    font-weight: bold;
 }
 
-.hotel-search input:focus,
 .hotel-search input:hover {
     background-color: #ebebeb;
-    border: none;
+    ;
 }
 
-.hotel-search input:active {
+.hotel-search input:focus {
     background-color: #ffffff;
     border: 2px solid #ebebeb;
 }
@@ -626,21 +656,27 @@ img {
     top: 65px;
 }
 
+.calendar-button-arriaval path,
+.calendar-button-departure path {
+    fill: #a9a9a9;
+}
+
+
 .calendar-button-departure {
     right: 65px;
     top: 140px;
 }
 
-.calendar-button-arriaval:hover,
-.calendar-button-departure:hover,
-.calendar-button-arriaval:focus,
-.calendar-button-departure:focus {
+.calendar-button-arriaval:hover path,
+.calendar-button-departure:hover path,
+.calendar-button-arriaval:focus path,
+.calendar-button-departure:focus  path {
     fill: #000000;
     border: none;
 }
 
-.calendar-button-arriaval:active,
-.calendar-button-departure:active {
+.calendar-button-arriaval:active path,
+.calendar-button-departure:active path {
     fill: #81b3d2;
 }
 
@@ -690,6 +726,7 @@ img {
     background-color: #81b3d2;
     text-transform: uppercase;
     padding: 15px 195px;
+    border: none;
 }
 
 .button-search:hover,
@@ -759,6 +796,7 @@ a .details {
     margin: 0;
     width: 240px;
     vertical-align: middle;
+    text-align: right;
 }
 
 .footer-tag a {
