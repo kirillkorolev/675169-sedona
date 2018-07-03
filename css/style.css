@@ -56,7 +56,7 @@ img {
     width: 138px;
     height: 70px;
     position: absolute;
-    right: 533px;
+    right: 530px;
     z-index: 1;
 }
 
@@ -140,9 +140,8 @@ img {
 .welcome-to-sedona {
     width: 1200px;
     height: 510px;
-    background: url("../img/background%20photo.jpg") no-repeat 0 50%;
-    background-size: 1200px 510px;
-    background-color: #d6e7f1;
+    background: #d6e7f1 url("../img/background%20photo.jpg") no-repeat 0 -55px;
+
     margin-bottom: 0px;
     position: relative;
 }
@@ -170,7 +169,7 @@ img {
     left: 0px;
 }
 
-.container .welcome-to-sedona {
+.welcome-to-sedona {
     margin-bottom: 0px;
 }
 
@@ -180,7 +179,8 @@ img {
     color: #333333;
     font-weight: bold;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
+
 }
 
 .sedona-reasons p {
@@ -207,10 +207,6 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-}
-
-.sedona-advantages {
-    list-style: none;
 }
 
 .sedona-reasons ol {
@@ -271,6 +267,8 @@ img {
     flex-basis: 400px;
     margin: 0;
     padding: 0;
+    list-style: none;
+    width: 1200px;
 }
 
 
@@ -279,19 +277,37 @@ img {
 }
 
 .town p {
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 18px;
+    padding-bottom: 50px;
+    padding-left: 48px;
+    padding-right: 65px;
 }
 
-.town h3,
-.bridge h3,
-.reason h3 {
+.town h3 {
     margin: 0;
     padding-top: 50px;
     padding-bottom: 20px;
 }
+
+.bridge h3 {
+    margin: 0;
+    padding-top: 46px;
+    padding-bottom: 23px;
+}
+
+.bridge p {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.reason h3 {
+    margin: 0;
+    padding-top: 47px;
+    padding-bottom: 20px;
+}
+
+
 
 .town span,
 .bridge span,
@@ -371,11 +387,6 @@ img {
     padding-right: 122px;
 }
 
-.sedona-advantages {
-    list-style: none;
-    width: 1200px;
-}
-
 .sedona-reasons ol {
     list-style: none;
 }
@@ -389,20 +400,15 @@ img {
 .advantage p {
     margin: 0;
     padding: 0;
-    padding-top: 30px;
-}
-
-.sedona-advantages {
-    list-style: none;
+    padding-top: 14px;
+    padding-right: 3px;
 }
 
 
 .advantage {
     padding-top: 160px;
-    padding-bottom: 80px;
-
+    padding-bottom: 75px;
     position: relative;
-
 }
 
 .sedona-advantages li:first-child::before {
@@ -451,17 +457,17 @@ img {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
-    padding-left: 58px;
+    padding-left: 56px;
     padding-right: 57px;
 }
 
 .reason p {
-    padding-left: 70px;
-    padding-right: 71px;
+    padding-left: 73px;
+    padding-right: 80px;
     text-align: center;
     margin: 0;
-    padding-top: 27px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 48px;
 }
 
 /* cетка галвной страницы конец */
@@ -491,6 +497,10 @@ img {
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .interested p {
@@ -498,12 +508,11 @@ img {
     line-height: 24px;
     font-weight: normal;
     text-align: center;
-
 }
 
 .interested-container {
-    padding-top: 55px;
-    padding-bottom: 50px;
+    padding-top: 31px;
+    padding-bottom: 33px;
     font-weight: normal;
     margin-left: 383px;
     margin-right: 382px;
@@ -562,7 +571,8 @@ img {
 .form-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-top: -9px;
+    margin-bottom: 54px;
     width: 460px;
 }
 
@@ -570,16 +580,20 @@ img {
     display: flex;
     justify-content: space-between;
     width: 230px;
+    margin-left: 9px;
 }
 
 .form-grownups label,
 .form-children label {
-  padding-top: 10px;
+    padding-top: 17px;
 }
+
 .form-children {
     display: flex;
     justify-content: space-between;
     width: 180px;
+    margin-right: -9px
+
 }
 
 .search fieldset {
@@ -590,29 +604,14 @@ img {
 
 
 .hotel-search fieldset{
-    margin: 55px;
+    margin: 49px;
 }
 
 .hotel-search input[type="text"] {
     box-sizing: border-box;
     width: 345px;
-    padding: 10px 15px;
+    padding: 8px 10px;
     padding-right: 30px;
-
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    border: none;
-}
-
-.hotel-search input[type="number"] {
-    box-sizing: border-box;
-    padding: 9px 45px;
-    width: 115px;
-    text-align: center;
 
     font-size: 14px;
     line-height: 26px;
@@ -623,16 +622,32 @@ img {
     border: 2px solid #f2f2f2;
 }
 
+.hotel-search input[type="number"] {
+    box-sizing: border-box;
+    padding: 5px 45px;
+    width: 115px;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+
+    margin-top: 10px;
+}
+
 .search p {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     padding: 0;
     font-weight: bold;
 }
 
 .hotel-search input:hover {
     background-color: #ebebeb;
-    ;
 }
 
 .hotel-search input:focus {
@@ -647,57 +662,57 @@ img {
 .form-button {
     position: absolute;
     border: none;
-    background-color: #f2f2f2;
+    background-color: transparent;
     color: #a9a9a9;
 }
 
 .calendar-button-arriaval {
-    right: 65px;
-    top: 65px;
+    right: 57px;
+    top: 60px;
 }
 
-.calendar-button-arriaval path,
-.calendar-button-departure path {
+.calendar-button-arriaval g,
+.calendar-button-departure g {
     fill: #a9a9a9;
 }
 
 
 .calendar-button-departure {
-    right: 65px;
-    top: 140px;
+    right: 57px;
+    top: 129px;
 }
 
-.calendar-button-arriaval:hover path,
-.calendar-button-departure:hover path,
-.calendar-button-arriaval:focus path,
-.calendar-button-departure:focus  path {
+.calendar-button-arriaval:hover g,
+.calendar-button-departure:hover g,
+.calendar-button-arriaval:focus g,
+.calendar-button-departure:focus  g {
     fill: #000000;
     border: none;
 }
 
-.calendar-button-arriaval:active path,
-.calendar-button-departure:active path {
+.calendar-button-arriaval:active g,
+.calendar-button-departure:active g {
     fill: #81b3d2;
 }
 
 .minus-grownups {
-    left: 175px;
-    top: 218px;
+    left: 180px;
+    top: 200px;
 }
 
 .plus-grownups {
-    top: 218px;
+    top: 200px;
     left: 255px;
 }
 
 .minus-children {
-    top: 218px;
-    right: 140px;
+    top: 200px;
+    right: 138px;
 }
 
 .plus-children {
-    top: 218px;
-    right: 65px;
+    top: 200px;
+    right: 62px;
 }
 
 .minus-grownups:hover,
@@ -1339,3 +1354,56 @@ a .details {
     width: 110px;
 }
 
+
+
+
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
