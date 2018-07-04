@@ -38,7 +38,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    box-shadow: 0 0 15px 0 #000101;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 /* стили для хедера начало*/
@@ -277,7 +277,9 @@ img {
 }
 
 .town p {
-    padding-top: 18px;
+    padding: 0;
+    margin: 0;
+    padding-top: 17px;
     padding-bottom: 50px;
     padding-left: 48px;
     padding-right: 65px;
@@ -285,7 +287,7 @@ img {
 
 .town h3 {
     margin: 0;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 20px;
 }
 
@@ -299,6 +301,8 @@ img {
     padding: 0;
     margin: 0;
     padding-top: 15px;
+    padding-left: 48px;
+    padding-right: 50px;
 }
 
 .reason h3 {
@@ -400,10 +404,9 @@ img {
 .advantage p {
     margin: 0;
     padding: 0;
-    padding-top: 14px;
+    padding-top: 17px;
     padding-right: 3px;
 }
-
 
 .advantage {
     padding-top: 160px;
@@ -462,13 +465,15 @@ img {
 }
 
 .reason p {
-    padding-left: 73px;
+    padding-left: 55px;
     padding-right: 80px;
     text-align: center;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 48px;
 }
+
+
 
 /* cетка галвной страницы конец */
 
@@ -572,7 +577,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: -9px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
     width: 460px;
 }
 
@@ -580,20 +585,19 @@ img {
     display: flex;
     justify-content: space-between;
     width: 230px;
-    margin-left: 9px;
+    margin-left: 3px;
 }
 
 .form-grownups label,
 .form-children label {
-    padding-top: 17px;
+    padding-top: 18px;
 }
 
 .form-children {
     display: flex;
     justify-content: space-between;
     width: 180px;
-    margin-right: -9px
-
+    margin-right: -4px;
 }
 
 .search fieldset {
@@ -604,13 +608,13 @@ img {
 
 
 .hotel-search fieldset{
-    margin: 49px;
+    margin: 53px;
 }
 
 .hotel-search input[type="text"] {
     box-sizing: border-box;
     width: 345px;
-    padding: 8px 10px;
+    padding: 7px 10px;
     padding-right: 30px;
 
     font-size: 14px;
@@ -656,8 +660,10 @@ img {
 }
 
 .hotel-search label {
-    margin-right: 20px;
+    margin-right: 21px;
+
 }
+
 
 .form-button {
     position: absolute;
@@ -772,13 +778,16 @@ a .details {
     padding-left: 40px;
     padding-right: 40px;
 
-    margin-top: -120px;
+    margin-top: -125px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 35px;
+
+    position: relative;
+    z-index: 1;
 }
 
 .main-footer-inner {
@@ -790,17 +799,18 @@ a .details {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
+
 }
 
 .footer-social {
     text-align: center;
     margin: 0;
-    width: 400px;
+    margin-left: 19px;
 }
 
 .footer-copyright {
     margin: 0;
-    width: 240px;
+    width: 250px;
 }
 
 .footer-copyright svg {
@@ -809,9 +819,10 @@ a .details {
 
 .footer-tag {
     margin: 0;
-    width: 240px;
+    width: 229px;
     vertical-align: middle;
     text-align: right;
+
 }
 
 .footer-tag a {
@@ -824,7 +835,7 @@ a .details {
     justify-content: center;
     background-color: #81b3d2;
     width: 47px;
-    height: 50px;
+    height: 49px;
 }
 
 .footer-social ul {
@@ -864,27 +875,27 @@ a .details {
 .filters {
     background-color: #000000;
     background-image: url("../img/inner-back.jpg");
-    background-position: 0 -70px;
+    background-position: 0 -57px;
     background-repeat: no-repeat;
     color: #ffffff;
     width: 1200px;
-    height: 220px;
+    height: 218px;
 }
 
 .filter-columns {
     display: flex;
     flex-direction: row;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 73px;
+    padding-right: px;
 
 }
 
 .infrastructure {
-    margin-right: 115px;
+    margin-right: 125px;
 }
 
 .cost {
-    margin-left: 343px;
+    margin-left: 340px;
 }
 
 .filters ul {
@@ -907,7 +918,7 @@ a .details {
     margin: 0;
     margin-bottom: 30px;
 
-    margin-top: 25px;
+    margin-top: 27px;
 }
 
 .filters ul {
@@ -915,7 +926,7 @@ a .details {
 }
 
 .filter-option {
-     margin-bottom: 20px;
+     margin-bottom: 25px;
      margin-left: 40px;
 
 }
@@ -927,6 +938,10 @@ a .details {
 
      cursor: pointer;
      user-select: none;
+
+     font-size: 14px;
+     line-height: 21px;
+     font-weight: normal;
 }
 
 .filter-input-checkbox + label::before {
@@ -976,15 +991,10 @@ a .details {
     background-color: #ffffff;
 }
 
-.filter-option label {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-}
 
 .price-controls {
     min-height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -994,7 +1004,7 @@ a .details {
 }
 
 .cost legend {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 
 .price-controls::after {
@@ -1023,17 +1033,18 @@ a .details {
      font-weight: normal;
 
      padding-top: 5px;
+
      text-align: center;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
      box-sizing: content-box;
-     width: 155px;
+     width: 157px;
 }
 
 .price-controls input {
-     width: 35px;
+     width: 39px;
      margin: 0;
 
      font: inherit;
@@ -1095,7 +1106,11 @@ a .details {
 .btn-transparent {
      display: block;
      margin: 0 auto;
-     padding: 6px 35px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-left: 32px;
+     padding-right: 32px;
+
 
      background: transparent;
      border: 2px solid #ffffff;
@@ -1112,19 +1127,19 @@ a .details {
 
 .search-filters-container {
     display: flex;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 73px;
+    padding-right: 73px;
 }
 
 .search-filters-container p {
-    padding-right: 50px;
+    padding-right: 48px;
     margin: 0;
     padding-top: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .sorting-type li:not(:last-child) {
-     padding-right: 35px;
+     padding-right: 33px;
 }
 
 .sorting-style {
@@ -1142,7 +1157,7 @@ a .details {
 .search-filters-container .sorting-type {
     display: flex;
     padding-top:  35px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
     margin: 0;
 }
 
@@ -1214,8 +1229,6 @@ a .details {
     fill: #81b3d2;
 }
 
-
-
 /* Результаты поиска гостиницы начало */
 
 .search-results {
@@ -1241,32 +1254,30 @@ a .details {
     font-size: 21px;
     line-height: 26px;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 
 }
 
 .search-result-item {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-    color: #333333;
-}
+     font-size: 14px;
+     line-height: 21px;
+     font-weight: normal;
+     color: #333333;
 
-.search-result-item {
      display: flex;
-     padding-left: 75px;
+     padding-left: 73px;
 }
 
 .hotel-photo {
-     padding-right: 35px;
-     padding-top: 30px;
-     padding-bottom: 30px;
+     padding-right: 29px;
+     padding-top: 28px;
+     padding-bottom: 32px;
 }
 
 .hotel-description {
      width: 260px;
      padding-top: 25px;
-     padding-bottom: 30px;
+     padding-bottom: 3px;
      flex-grow: 1;
 }
 
@@ -1286,13 +1297,13 @@ a .details {
      width: 110px;
      padding-left: 525px;
      text-align: right;
-     padding-top: 30px;
-     padding-bottom: 30px;
+     padding-top: 28px;
+     padding-bottom: 33px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
 
-     padding-right: 66px;
+     padding-right: 71px;
 }
 
 .search-result-item a {
@@ -1313,8 +1324,8 @@ a .details {
     background-color: #81b3d2;
 
     display: inline-block;
-    padding: 5px 15px;
-    margin-right: 5px;
+    padding: 3px 16px;
+    margin-right: 4px;
 }
 
 .search-result-item .details:hover {
@@ -1332,7 +1343,7 @@ a .details {
     background-color: #766357;
 
     display: inline-block;
-    padding: 5px 15px;
+    padding: 3px 16px;
 
 }
 
@@ -1359,13 +1370,13 @@ a .details {
 
 
 .modal-show {
-  display: block;
+    display: block;
 
-  animation: bounce 0.6s;
+    animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+    animation: shake 0.6s;
 }
 
 @keyframes bounce {
