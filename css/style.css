@@ -1,16 +1,16 @@
 body {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
+   font-family: "PT Sans", Arial, sans-serif;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: bold;
+   color: #000000;
+   text-transform: uppercase;
+   background-color: #f2f2f2;
 
-    min-width: 1200px;
+   min-width: 1200px;
 }
 
 a {
@@ -18,8 +18,8 @@ a {
 }
 
 img {
-     max-width: 100%;
-     height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -49,7 +49,7 @@ img {
 
 .main-navigation {
     position: relative;
-    margin-bottom: 0px:
+    margin-bottom: 0;
 }
 
 .main-header-logo {
@@ -63,8 +63,8 @@ img {
 .site-navigation {
     width: 1050px;
     margin: 0;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 73px;
+    padding-right: 73px;
 
     display: flex;
     flex-direction: row;
@@ -79,12 +79,12 @@ img {
 
 .site-navigation li:first-child,
 .site-navigation li:last-child {
-    width: 240px;
+    width: 244px;
 }
 
 .site-navigation li:nth-child(2),
 .site-navigation li:nth-child(3) {
-    width: 290px;
+    width: 287px;
 }
 
 .site-navigation li:last-child,
@@ -136,7 +136,6 @@ img {
 /* стили для хедера конец*/
 
 
-
 .welcome-to-sedona {
     width: 1200px;
     height: 510px;
@@ -149,7 +148,7 @@ img {
 .map {
     width: 1200px;
     min-height: 593px;
-    background: url("../img/map.jpg") no-repeat 0 50%;
+    background: #cbdda9 url("../img/map.jpg") no-repeat 0 50%;
     background-size: 1200px 593px;
 }
 
@@ -179,16 +178,16 @@ img {
     color: #333333;
     font-weight: bold;
     padding-top: 60px;
-    padding-bottom: 27px;
-
+    padding-bottom: 28px;
+    margin-right: 6px;
 }
 
 .sedona-reasons p {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     font-weight: normal;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
 
@@ -279,44 +278,42 @@ img {
 .town p {
     padding: 0;
     margin: 0;
-    padding-top: 17px;
+    padding-top: 18px;
     padding-bottom: 50px;
-    padding-left: 48px;
-    padding-right: 65px;
+    padding-left: 46px;
+    padding-right: 61px;
 }
 
 .town h3 {
     margin: 0;
-    padding-top: 48px;
-    padding-bottom: 20px;
+    padding-top: 49px;
+    padding-bottom: 21px;
 }
 
 .bridge h3 {
     margin: 0;
-    padding-top: 46px;
-    padding-bottom: 23px;
+    padding-top: 49px;
+    padding-bottom: 20px;
 }
 
 .bridge p {
     padding: 0;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 19px;
     padding-left: 48px;
-    padding-right: 50px;
+    padding-right: 45px;
 }
 
 .reason h3 {
     margin: 0;
-    padding-top: 47px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
-
-
 
 .town span,
 .bridge span,
 .reason span {
-   position: relative;
+    position: relative;
 }
 
 .town span::after,
@@ -379,7 +376,7 @@ img {
 
 .sedona-reasons p {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     font-weight: normal;
 }
 
@@ -405,12 +402,11 @@ img {
     margin: 0;
     padding: 0;
     padding-top: 17px;
-    padding-right: 3px;
 }
 
 .advantage {
-    padding-top: 160px;
-    padding-bottom: 75px;
+    padding-top: 164px;
+    padding-bottom: 81px;
     position: relative;
 }
 
@@ -465,26 +461,24 @@ img {
 }
 
 .reason p {
-    padding-left: 55px;
-    padding-right: 80px;
+    padding-left: 83px;
+    padding-right: 85px;
+
     text-align: center;
     margin: 0;
     padding-top: 18px;
-    padding-bottom: 48px;
+    padding-bottom: 55px;
+
+    margin-left:
 }
 
-
-
 /* cетка галвной страницы конец */
-
-
 
 .interested {
     text-align: center;
     background-color: #ffffff;
     margin-bottom: 0;
 }
-
 
 .interested a {
     background-color: #766357;
@@ -505,7 +499,7 @@ img {
     padding: 0;
     margin: 0;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 
 .interested p {
@@ -590,8 +584,9 @@ img {
 
 .form-grownups label,
 .form-children label {
-    padding-top: 18px;
+    padding-top: 19px;
 }
+
 
 .form-children {
     display: flex;
@@ -614,7 +609,7 @@ img {
 .hotel-search input[type="text"] {
     box-sizing: border-box;
     width: 345px;
-    padding: 7px 10px;
+    padding: 6px 10px;
     padding-right: 30px;
 
     font-size: 14px;
@@ -628,7 +623,7 @@ img {
 
 .hotel-search input[type="number"] {
     box-sizing: border-box;
-    padding: 5px 45px;
+    padding: 3px 40px;
     width: 115px;
     text-align: center;
 
@@ -640,12 +635,12 @@ img {
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
 
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 .search p {
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding: 0;
     font-weight: bold;
 }
@@ -660,8 +655,7 @@ img {
 }
 
 .hotel-search label {
-    margin-right: 21px;
-
+    margin-right: 19px;
 }
 
 
@@ -670,6 +664,7 @@ img {
     border: none;
     background-color: transparent;
     color: #a9a9a9;
+    font-size: 21px;
 }
 
 .calendar-button-arriaval {
@@ -681,7 +676,6 @@ img {
 .calendar-button-departure g {
     fill: #a9a9a9;
 }
-
 
 .calendar-button-departure {
     right: 57px;
@@ -703,21 +697,21 @@ img {
 
 .minus-grownups {
     left: 180px;
-    top: 200px;
+    top: 195px;
 }
 
 .plus-grownups {
-    top: 200px;
-    left: 255px;
+    top: 197px;
+    left: 252px;
 }
 
 .minus-children {
-    top: 200px;
+    top: 195px;
     right: 138px;
 }
 
 .plus-children {
-    top: 200px;
+    top: 197px;
     right: 62px;
 }
 
@@ -879,15 +873,13 @@ a .details {
     background-repeat: no-repeat;
     color: #ffffff;
     width: 1200px;
-    height: 218px;
+    min-height: 218px;
 }
 
 .filter-columns {
     display: flex;
     flex-direction: row;
-    padding-left: 73px;
-    padding-right: px;
-
+    padding-left: 72px;
 }
 
 .infrastructure {
@@ -895,7 +887,7 @@ a .details {
 }
 
 .cost {
-    margin-left: 340px;
+    margin-left: 350px;
 }
 
 .filters ul {
@@ -909,6 +901,7 @@ a .details {
     line-height: 21px;
 
     margin-bottom: 25px;
+    margin-right: -1px;
 }
 
 .filters fieldset {
@@ -916,7 +909,7 @@ a .details {
 
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 
     margin-top: 27px;
 }
@@ -928,7 +921,6 @@ a .details {
 .filter-option {
      margin-bottom: 25px;
      margin-left: 40px;
-
 }
 
 .filter-option label {
@@ -993,8 +985,8 @@ a .details {
 
 
 .price-controls {
-    min-height: 35px;
-    margin-bottom: 17px;
+    min-height: 30px;
+    margin-bottom: 20px;
 
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -1032,7 +1024,8 @@ a .details {
      line-height: 21px;
      font-weight: normal;
 
-     padding-top: 5px;
+     padding-top: 4px;
+     padding-left: 2px;
 
      text-align: center;
 }
@@ -1040,11 +1033,11 @@ a .details {
 .price-controls .min-price,
 .price-controls .max-price {
      box-sizing: content-box;
-     width: 157px;
+     width: 155px;
 }
 
 .price-controls input {
-     width: 39px;
+     width: 30px;
      margin: 0;
 
      font: inherit;
@@ -1058,7 +1051,7 @@ a .details {
 .range-controls {
      position: relative;
 
-     margin-bottom: 30px;
+     margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -1106,10 +1099,11 @@ a .details {
 .btn-transparent {
      display: block;
      margin: 0 auto;
+     margin-left: 83px;
      padding-top: 5px;
      padding-bottom: 5px;
-     padding-left: 32px;
-     padding-right: 32px;
+     padding-left: 35px;
+     padding-right: 35px;
 
 
      background: transparent;
@@ -1127,12 +1121,12 @@ a .details {
 
 .search-filters-container {
     display: flex;
-    padding-left: 73px;
+    padding-left: 72px;
     padding-right: 73px;
 }
 
 .search-filters-container p {
-    padding-right: 48px;
+    padding-right: 47px;
     margin: 0;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -1164,6 +1158,7 @@ a .details {
 .search-filters h3 {
     font-size: 12px;
     line-height: 18px;
+    font-weight: normal;
     margin: 0;
     padding-top: 35px;
 }
@@ -1172,6 +1167,7 @@ a .details {
     list-style: none;
     font-size: 12px;
     line-height: 18px;
+    font-weight: normal;
 }
 
 .search-filters p {
@@ -1243,11 +1239,11 @@ a .details {
 }
 
 .search-results li {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #e5e5e5;
 }
 
 .search-results li:last-child {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-description h3 {
@@ -1283,6 +1279,7 @@ a .details {
 
 .hotel-type {
      display: inline-block;
+     vertical-align: top;
      min-width: 110px;
 
      padding-right: 5px;
@@ -1291,6 +1288,7 @@ a .details {
 
 .price {
      display: inline-block;
+     vertical-align: top;
 }
 
 .hotel-stars {
@@ -1324,6 +1322,8 @@ a .details {
     background-color: #81b3d2;
 
     display: inline-block;
+    vertical-align: top;
+
     padding: 3px 16px;
     margin-right: 4px;
 }
@@ -1343,6 +1343,7 @@ a .details {
     background-color: #766357;
 
     display: inline-block;
+    vertical-align: top;
     padding: 3px 16px;
 
 }
@@ -1363,6 +1364,7 @@ a .details {
 
     text-align: center;
     width: 110px;
+    padding: 0;
 }
 
 
