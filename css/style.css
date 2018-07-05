@@ -154,7 +154,7 @@ img {
 
 .welcome-to-sedona img {
     padding-top: 75px;
-    padding-left: 370px;
+    padding-left: 372px;
 }
 
 .welcome-to-sedona .shape {
@@ -461,15 +461,13 @@ img {
 }
 
 .reason p {
-    padding-left: 83px;
-    padding-right: 85px;
+    padding-left: 65px;
+    padding-right: 65px;
 
     text-align: center;
     margin: 0;
     padding-top: 18px;
-    padding-bottom: 55px;
-
-    margin-left:
+    padding-bottom: 58px;
 }
 
 /* cетка галвной страницы конец */
@@ -489,7 +487,7 @@ img {
     font-weight: bold;
 
     display: inline-block;
-    padding: 30px 140px;
+    padding: 30px 141px;
 }
 
 .interested h2 {
@@ -498,7 +496,7 @@ img {
     font-weight: bold;
     padding: 0;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-bottom: 23px;
 }
 
@@ -571,7 +569,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: -9px;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
     width: 460px;
 }
 
@@ -609,7 +607,7 @@ img {
 .hotel-search input[type="text"] {
     box-sizing: border-box;
     width: 345px;
-    padding: 6px 10px;
+    padding: 5px 10px;
     padding-right: 30px;
 
     font-size: 14px;
@@ -640,7 +638,7 @@ img {
 
 .search p {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0;
     font-weight: bold;
 }
@@ -655,7 +653,7 @@ img {
 }
 
 .hotel-search label {
-    margin-right: 19px;
+    margin-right: 18px;
 }
 
 
@@ -740,7 +738,7 @@ img {
     color: #ffffff;
     background-color: #81b3d2;
     text-transform: uppercase;
-    padding: 15px 195px;
+    padding: 16px 195px;
     border: none;
 }
 
@@ -772,7 +770,7 @@ a .details {
     padding-left: 40px;
     padding-right: 40px;
 
-    margin-top: -125px;
+    margin-top: -127px;
 
     display: flex;
     flex-direction: row;
@@ -816,7 +814,6 @@ a .details {
     width: 229px;
     vertical-align: middle;
     text-align: right;
-
 }
 
 .footer-tag a {
@@ -1105,7 +1102,6 @@ a .details {
      padding-left: 35px;
      padding-right: 35px;
 
-
      background: transparent;
      border: 2px solid #ffffff;
      border-radius: 2px;
@@ -1251,7 +1247,6 @@ a .details {
     line-height: 26px;
     margin: 0;
     padding-bottom: 5px;
-
 }
 
 .search-result-item {
@@ -1293,7 +1288,7 @@ a .details {
 
 .hotel-stars {
      width: 110px;
-     padding-left: 525px;
+     /*padding-left: 525px;*/
      text-align: right;
      padding-top: 28px;
      padding-bottom: 33px;
