@@ -1246,7 +1246,7 @@ a .details {
     font-size: 21px;
     line-height: 26px;
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 }
 
 .search-result-item {
@@ -1256,13 +1256,13 @@ a .details {
      color: #333333;
 
      display: flex;
-     padding-left: 73px;
+     padding-left: 72px;
 }
 
 .hotel-photo {
-     padding-right: 29px;
-     padding-top: 28px;
-     padding-bottom: 32px;
+     padding-right: 30px;
+     padding-top: 30px;
+     padding-bottom: 30px;
 }
 
 .hotel-description {
@@ -1277,8 +1277,8 @@ a .details {
      vertical-align: top;
      min-width: 110px;
 
-     padding-right: 5px;
-     padding-bottom: 15px;
+     padding-right: 1px;
+     padding-bottom: 14px;
 }
 
 .price {
@@ -1288,10 +1288,9 @@ a .details {
 
 .hotel-stars {
      width: 110px;
-     /*padding-left: 525px;*/
      text-align: right;
      padding-top: 28px;
-     padding-bottom: 33px;
+     padding-bottom: 31px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -1356,10 +1355,11 @@ a .details {
 .search-result-item .rating {
     background-color: #f2f2f2;
     color: #666666;
-
-    text-align: center;
     width: 110px;
-    padding: 0;
+    text-align: center;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 
