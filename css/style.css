@@ -67,6 +67,7 @@ img {
     padding-right: 73px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -77,24 +78,17 @@ img {
     vertical-align: middle;
 }
 
-.site-navigation li:first-child,
-.site-navigation li:last-child {
-    width: 244px;
+.site-navigation li {
+    width: 241px;
 }
 
-.site-navigation li:nth-child(2),
-.site-navigation li:nth-child(3) {
-    width: 287px;
+.site-navigation li:nth-child(4n+2) {
+    margin-right: auto;
 }
 
-.site-navigation li:last-child,
-.site-navigation li:nth-child(3) {
-    text-align: right;
-}
-
-.site-navigation li:first-child,
-.site-navigation li:first-child {
-    text-align: left;
+.site-navigation li:nth-child(4n),
+.site-navigation li:nth-child(4n+3) {
+     text-align: right;
 }
 
 .site-navigation .current {
@@ -179,7 +173,7 @@ img {
     font-weight: bold;
     padding-top: 60px;
     padding-bottom: 28px;
-    margin-right: 6px;
+    margin-right: 9px;
 }
 
 .sedona-reasons p {
@@ -269,7 +263,6 @@ img {
     list-style: none;
     width: 1200px;
 }
-
 
 .town div {
     width: 400px;
@@ -776,7 +769,7 @@ a .details {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 35px;
+    padding-bottom: 41px;
 
     position: relative;
     z-index: 1;
@@ -942,7 +935,6 @@ a .details {
 
      left: -40px;
      top: 0;
-
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1298,6 +1290,12 @@ a .details {
      padding-right: 71px;
 }
 
+.hotel-stars img {
+     display: inline-block;
+     vertical-align: top;
+     margin-left: 6px;
+}
+
 .search-result-item a {
      color: #000000;
 }
@@ -1364,7 +1362,9 @@ a .details {
 
 
 
-
+.hotel-search {
+    display: none;
+}
 
 .modal-show {
     display: block;

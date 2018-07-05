@@ -41,7 +41,7 @@
 
           <h2 class="visually-hidden">Преимущества Седоны</h2>
               <div class="description">Седона - небольшой городок в Аризоне,<br>Заслуживающий большего!</div>
-              <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+              <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
                 <ol class="five-reasons" start="1">
 
@@ -287,44 +287,53 @@
 
     <script>
 
-      var link = document.querySelector(".search-button");
+    var popup = document.querySelector(".hotel-search");
 
-      var popup = document.querySelector(".hotel-search");
+    var link = document.querySelector(".search-button");
 
-      var close = popup.querySelector(".search-button");
+    var isPopupVisible = false;
 
-      var form = popup.querySelector("form");
-      var arriaval = popup.querySelector("[name=arriaval-date]");
-      var departure = popup.querySelector("[name=departure-date]");
+    var arriaval = popup.querySelector("[name=arriaval-date]");
+    var departure = popup.querySelector("[name=departure-date]");
 
-      var isStorageSupport = true;
-      var storage = "";
 
-      try {
-        storage = localStorage.getItem("arrival");
-        } catch (err) {
-          isStorageSupport = false;
-        }
+    var isStorageSupport = true;
+    var storage = "";
 
-        link.addEventListener("click", function (evt) {
+    try {
+      storage = localStorage.getItem("login");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+
+
+    link.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("modal-show");
+      if (isPopupVisible) {
+          popup.classList.remove("modal-show");
+          isPopupVisible = false;
+       } else {
+          popup.classList.add("modal-show");
+          arriaval.focus();
+          isPopupVisible = true;
+          }
+
       if (storage) {
-        arriaval.value = storage;
-        departure.focus();
+          arrival.value = storage;
+          departure.focus();
       } else {
-        arriaval.focus();
-       }
-      });
+          arrival.focus();
+      }
 
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
+     });
+           popup.addEventListener("submit", function (evt) {
+           evt.preventDefault();
+     });
 
-      });
 
-      form.addEventListener("submit", function (evt) {
+
+     popup.addEventListener("submit", function (evt) {
         if (!arrival.value || !departure.value) {
           evt.preventDefault();
           popup.classList.remove("modal-error");
