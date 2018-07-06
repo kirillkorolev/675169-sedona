@@ -22,13 +22,20 @@ img {
     height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
+
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -41,7 +48,6 @@ img {
     box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-/* стили для хедера начало*/
 .main-header {
     width: 100%;
     margin: 0;
@@ -127,9 +133,6 @@ img {
     color: rgba(0, 0, 0, 0.3);
 }
 
-/* стили для хедера конец*/
-
-
 .welcome-to-sedona {
     width: 1200px;
     height: 510px;
@@ -184,8 +187,6 @@ img {
     padding-bottom: 52px;
 }
 
-
-/* cетка главной страницы начало */
 .five-reasons {
     list-style: none;
     margin: 0;
@@ -463,8 +464,6 @@ img {
     padding-bottom: 58px;
 }
 
-/* cетка галвной страницы конец */
-
 .interested {
     text-align: center;
     background-color: #ffffff;
@@ -519,7 +518,6 @@ img {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/*Форма поиска жилья*/
 .search {
     text-align: center;
     font-size: 14px;
@@ -750,7 +748,6 @@ a .details {
     color: #ffffff;
 }
 
-/* стили футера (начало)*/
 .main-footer {
     text-transform: uppercase;
 
@@ -854,7 +851,6 @@ a .details {
 .copyright-button:active path{
     fill: #bdbbbc;
 }
-/* стили футера (конец)*/
 
 .filters {
     background-color: #000000;
@@ -948,13 +944,11 @@ a .details {
      top: 0;
 }
 
-
 .filter-input-checkbox:focus + label {
     outline-width: 2px;
     outline-style: solid;
     outline-color: Highlight;
 }
-
 
 .filter-input-checkbox:disabled + label {
     color: #6a6a6a;
@@ -1003,101 +997,98 @@ a .details {
     transform: translate(-50%, -50%)
 }
 
-
 .price-controls label {
-     display: inline-block;
-     vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 
-     cursor: pointer;
-     font-size: 14px;
-     line-height: 21px;
-     font-weight: normal;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
 
-     padding-top: 4px;
-     padding-left: 2px;
+    padding-top: 4px;
+    padding-left: 2px;
 
-     text-align: center;
+    text-align: center;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-     box-sizing: content-box;
-     width: 155px;
+    box-sizing: content-box;
+    width: 155px;
 }
 
 .price-controls input {
-     width: 30px;
-     margin: 0;
+    width: 30px;
+    margin: 0;
 
-     font: inherit;
-     color: inherit;
+    font: inherit;
+    color: inherit;
 
-     background: none;
-     border: none;
-
+    background: none;
+    border: none;
 }
 
 .range-controls {
-     position: relative;
-
-     margin-bottom: 33px;
+    position: relative;
+    margin-bottom: 33px;
 }
 
 .range-controls .scale {
-     height: 2px;
+    height: 2px;
 
-     background: rgba(144, 130, 129, 0.3);
-     margin-bottom: 30px;
+    background: rgba(144, 130, 129, 0.3);
+    margin-bottom: 30px;
 }
 
 .range-controls .bar {
-     width: 80%;
-     height: 2px;
+    width: 80%;
+    height: 2px;
 
-     background: #ffffff;
+    background: #ffffff;
 }
 
 .range-toggle {
-     width: 4px;
-     height: 4px;
+    width: 4px;
+    height: 4px;
 
-     background: #ababab;
-     border: 8px solid #ffffff;
-     border-radius: 50%;
-     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-     cursor: pointer;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 
-     position: absolute;
-     top: -9px;
+    position: absolute;
+    top: -9px;
 }
 
 .range-toggle-min {
-     left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-     left: 80%;
+    left: 80%;
 }
 
 .range-toggle:hover {
-     width: 6px;
-     height: 6px;
-     top: -10px;
+    width: 6px;
+    height: 6px;
+    top: -10px;
 }
 
 .btn-transparent {
-     display: block;
-     margin: 0 auto;
-     margin-left: 83px;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     padding-left: 35px;
-     padding-right: 35px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 83px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
 
-     background: transparent;
-     border: 2px solid #ffffff;
-     border-radius: 2px;
-     cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 
 }
 
@@ -1194,7 +1185,7 @@ a .details {
 }
 
 .sorting-triangle polygon {
-     fill: #cacaca;
+    fill: #cacaca;
 }
 
 .sorting-triangle:hover polygon,
@@ -1212,8 +1203,6 @@ a .details {
 .sorting-triangle-current polyline {
     fill: #81b3d2;
 }
-
-/* Результаты поиска гостиницы начало */
 
 .search-results {
     background-color: #ffffff;
@@ -1242,19 +1231,19 @@ a .details {
 }
 
 .search-result-item {
-     font-size: 14px;
-     line-height: 21px;
-     font-weight: normal;
-     color: #333333;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
 
-     display: flex;
-     padding-left: 72px;
+    display: flex;
+    padding-left: 72px;
 }
 
 .hotel-photo {
-     padding-right: 30px;
-     padding-top: 30px;
-     padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .hotel-description {
@@ -1337,7 +1326,6 @@ a .details {
     display: inline-block;
     vertical-align: top;
     padding: 3px 16px;
-
 }
 
 .search-result-item .booking:hover {
@@ -1359,8 +1347,6 @@ a .details {
     padding-top: 2px;
     padding-bottom: 2px;
 }
-
-
 
 .hotel-search {
     display: none;
