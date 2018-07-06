@@ -2,24 +2,21 @@ var popup = document.querySelector(".search");
 
 var form = document.querySelector(".hotel-search");
 
-    var link = document.querySelector(".search-button");
+var link = document.querySelector(".search-button");
 
-    var isPopupVisible = false;
+var isPopupVisible = false;
 
-    var arriaval = popup.querySelector("[name=arriaval-date]");
-    var departure = popup.querySelector("[name=departure-date]");
+var arriaval = popup.querySelector("[name=arriaval-date]");
+var departure = popup.querySelector("[name=departure-date]");
 
-
-    var isStorageSupport = true;
-    var storage = "";
+var isStorageSupport = true;
+var storage = "";
 
     try {
       storage = localStorage.getItem("arriaval");
     } catch (err) {
       isStorageSupport = false;
     }
-
-
 
     link.addEventListener("click", function (evt) {
         evt.preventDefault();
