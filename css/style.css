@@ -82,6 +82,7 @@ input[type="radio"].visually-hidden {
     padding-top: 15px;
     padding-bottom: 15px;
     vertical-align: middle;
+    list-style: none;
 }
 
 .site-navigation li {
@@ -99,10 +100,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation .current {
     color: #766357;
-}
-
-.site-navigation {
-    list-style: none;
 }
 
 .button {
@@ -166,10 +163,6 @@ input[type="radio"].visually-hidden {
     position: absolute;
     bottom: -1px;
     left: 0px;
-}
-
-.welcome-to-sedona {
-    margin-bottom: 0px;
 }
 
 .sedona-reasons .description {
@@ -350,6 +343,7 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 0px;
+    text-align: center
 }
 
 .five-reasons .reason {
@@ -357,11 +351,6 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
     text-align: center;
     margin: 0;
-}
-
-.reason,
-.sedona-reasons {
-    text-align: center;
 }
 
 .sedona-reasons .description {
@@ -557,6 +546,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
 
     align-content: stretch;
+    display: none;
 }
 
 .form-block {
@@ -593,8 +583,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-
-.hotel-search fieldset{
+.hotel-search fieldset {
     margin: 53px;
 }
 
@@ -677,7 +666,7 @@ input[type="radio"].visually-hidden {
 .calendar-button-arriaval:hover g,
 .calendar-button-departure:hover g,
 .calendar-button-arriaval:focus g,
-.calendar-button-departure:focus  g {
+.calendar-button-departure:focus g {
     fill: #000000;
     border: none;
 }
@@ -901,10 +890,6 @@ a .details {
     margin-bottom: 0px;
 
     margin-top: 27px;
-}
-
-.filters ul {
-     list-style: none;
 }
 
 .filter-option {
@@ -1349,10 +1334,6 @@ a .details {
 
     padding-top: 2px;
     padding-bottom: 2px;
-}
-
-.search {
-    display: none;
 }
 
 .modal-show {
