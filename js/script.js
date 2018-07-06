@@ -6,6 +6,9 @@ var link = document.querySelector(".search-button");
 
 var isPopupVisible = false;
 
+var arriaval = popup.querySelector("[name=arriaval-date]");
+var departure = popup.querySelector("[name=departure-date]");
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -37,7 +40,7 @@ form.addEventListener("submit", function (evt) {
     form.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("arrival", arriaval.value);
+      localStorage.setItem("arriaval", arriaval.value);
     }
   }
 });
