@@ -147,6 +147,9 @@ input[type="radio"].visually-hidden {
     min-height: 593px;
     background: #cbdda9 url("../img/map.jpg") no-repeat 0 50%;
     background-size: 1200px 593px;
+
+    position: relative;
+    overflow: hidden;
 }
 
 .welcome-to-sedona img {
@@ -1364,19 +1367,10 @@ a .details {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateX(-50%) translateY(-2000px);
   }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
   100% {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
