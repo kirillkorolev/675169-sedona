@@ -189,10 +189,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-.sedona-advantages .advantage {
-    width: 400px;
-}
-
 .five-reasons h3 {
     font-size: 21px;
     line-height: 21px;
@@ -254,11 +250,17 @@ input[type="radio"].visually-hidden {
 .sedona-advantages {
     display: flex;
     flex-direction: row;
-    flex-basis: 400px;
     margin: 0;
     padding: 0;
     list-style: none;
     width: 1200px;
+}
+
+.advantage {
+    padding-top: 164px;
+    padding-bottom: 81px;
+    position: relative;
+    width: 400px;
 }
 
 .town div {
@@ -390,41 +392,44 @@ input[type="radio"].visually-hidden {
     padding-top: 17px;
 }
 
-.advantage {
-    padding-top: 164px;
-    padding-bottom: 81px;
-    position: relative;
-}
-
 .sedona-advantages li:first-child::before {
-    content: url("../img/icon-1.svg");
+    content: "";
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
 
+    width: 75px;
+    height: 72px;
     position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
 
+    top: 61px;
+    left: 163px;
 }
 
 .sedona-advantages li:nth-child(2)::before {
-    content: url("../img/icon-3.svg");
+    content: "";
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+
+    width: 74px;
+    height: 72px;
     position: absolute;
 
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 62px;
+    left: 164px;
 }
 
 .sedona-advantages li:last-child::before {
-    content: url("../img/icon-2.svg");
+    content: "";
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
 
+    width: 64px;
+    height: 76px;
     position: absolute;
 
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 57px;
+    left: 169px;
 }
-
 
 .five-reasons > li:nth-child(1),
 .five-reasons > li:nth-child(2) {
@@ -518,22 +523,13 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     color: #000000;
     background-color: #ffffff;
-    border: 2px solid #766357;
 
-    padding: 55px;
-}
-
-.interested .button {
-    position: relative;
-}
-
-.search {
     list-style: none;
-
+    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
+
     left: 50%;
     transform: translateX(-50%);
 
@@ -542,8 +538,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
 
     border: none;
-    display: flex;
-    flex-direction: column;
 
     align-content: stretch;
     display: none;
@@ -562,6 +556,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     width: 230px;
     margin-left: 3px;
+    position: relative;
 }
 
 .form-grownups label,
@@ -575,6 +570,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     width: 180px;
     margin-right: -4px;
+    position: relative;
 }
 
 .search fieldset {
@@ -624,6 +620,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 27px;
     padding: 0;
     font-weight: bold;
+    position: relative;
 }
 
 .hotel-search input:hover {
@@ -649,8 +646,8 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar-button-arriaval {
-    right: 57px;
-    top: 60px;
+    right: 4px;
+    top: 9px;
 }
 
 .calendar-button-arriaval g,
@@ -659,8 +656,8 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar-button-departure {
-    right: 57px;
-    top: 129px;
+    right: 4px;
+    top: 9px;
 }
 
 .calendar-button-arriaval:hover g,
@@ -677,23 +674,23 @@ input[type="radio"].visually-hidden {
 }
 
 .minus-grownups {
-    left: 180px;
-    top: 195px;
+    left: 121px;
+    top: 18px;
 }
 
 .plus-grownups {
-    top: 197px;
-    left: 252px;
+    top: 18px;
+    right: 11px;
 }
 
 .minus-children {
-    top: 195px;
-    right: 138px;
+    top: 18px;
+    right: 86px;
 }
 
 .plus-children {
-    top: 197px;
-    right: 62px;
+    top: 18px;
+    right: 8px;
 }
 
 .minus-grownups:hover,
@@ -773,7 +770,6 @@ a .details {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-
 }
 
 .footer-social {
@@ -784,7 +780,7 @@ a .details {
 
 .footer-copyright {
     margin: 0;
-    width: 250px;
+    width: 249px;
 }
 
 .footer-copyright svg {
@@ -834,6 +830,7 @@ a .details {
 .copyright-button path{
     fill: #000000;
 }
+
 
 .copyright-button:hover path,
 .copyright-button:focus path {
